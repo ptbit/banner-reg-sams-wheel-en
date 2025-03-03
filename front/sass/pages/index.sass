@@ -1,5 +1,6 @@
 $blue: #000099
 $white: #ffffff
+$pink: #FF267E
 // $magenta: #FF267E
 // $dark-magenta: #97024C
 // $purple: #5C107D
@@ -34,27 +35,36 @@ $font-lobster-reg: Lobster, sans-serif
     background: url("../img/bg-640.jpg") no-repeat 50% 50%/cover
   @media screen and (max-width: 1260px)
     background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
+
+  &__header
+    margin-top: 60px
   &__logo
-    width: 615px
-    position: absolute
-    top: 92px
+    width: 489px
+    height: 88px
+    margin: 0 auto
   &__title
+    margin-top: 82px
     color: $white
     text-align: center
     font-family: $font-suisse-intl-semib
-    font-size: 90px
+    font-size: 70px
     font-style: normal
     font-weight: 600
     line-height: normal
     text-transform: uppercase
+    p
+      background-color: $pink
+      width: fit-content
+      margin: 0 auto
+      padding: 0 10px
   &__sam
     position: absolute
-    bottom: -9px
-    left: -93px
-    right: 0
-    width: 942px
+    inset: 0
+    top: auto
     height: 768px
     border: 1px dashed white
+    img
+      max-height: 100%
   &__footer
     position: absolute
     bottom: 42px
