@@ -1,16 +1,16 @@
 @media screen and (min-width: 2560px) and (max-height: 1364px) // 1364 to 1214
   .wheel
     &__header
-      transform: scale(1.2)
       transform-origin: top
     &__sam
-      transform: scale(1.2)
       transform-origin: bottom left
       left: 0
       right: 0
     &__footer
-      transform: scale(1.2)
       transform-origin: bottom
+    &__header, &__sam, &__footer
+      transform: scale(1.2)
+    
 @media screen and (min-width: 2560px) and (max-height: 1280px)
   .wheel
     &__title
@@ -34,26 +34,23 @@
       transform-origin: top
 @media screen and (max-width: 2204px) and (max-height: 890px) 
   .wheel
-    &__header
-      transform: scale(0.85)
     &__sam
-      transform: scale(0.85)
       transform-origin: bottom
       bottom: -40px
+    &__header, &__sam, &__footer
+      transform: scale(0.85)
 ///DEFAULT
 @media screen and (max-width: 1920px) and (max-height: 1100px)
   .wheel
-    &__header
-      transform: scale(1)
     &__title
       margin-top: 78px
     &__sam
-      transform: scale(1)
       left: -93px
       bottom: -9px
     &__footer
-      transform: scale(1)
       bottom: 38px
+    &__header, &__sam, &__footer
+      transform: scale(1)
 @media screen and (max-width: 1920px) and (max-height: 1060px)
   .wheel
     &__title
@@ -62,34 +59,31 @@
   .wheel
     &__header
       margin-top: 40px
-      transform: scale(0.9)
       transform-origin: top
     &__sam
-      transform: scale(0.9)
       transform-origin: bottom
-
+    &__header, &__sam, &__footer
+      transform: scale(0.9)
 @media screen and (max-width: 1830px) and (max-height: 920px) // to 770
   .wheel
     &__header
       margin-top: 40px
-      transform: scale(0.9)
       transform-origin: top
     &__title
       margin-top: 30px
     &__sam
-      transform: scale(0.9)
       transform-origin: bottom
+    &__footer
+      transform-origin: bottom
+    &__header, &__sam, &__footer
+      transform: scale(0.9)
 @media screen and (max-width: 1830px) and (max-height: 900px) // to 770
   .wheel
-    &__header
-      transform: scale(0.8)
-    &__sam
+    &__header, &__sam, &__footer
       transform: scale(0.8)
 @media screen and (max-width: 1830px) and (max-height: 800px) // to 770
   .wheel
-    &__header
-      transform: scale(0.75)
-    &__sam
+    &__header, &__sam, &__footer
       transform: scale(0.75)
 @media screen and (max-width: 1680px) and (max-height: 1050px) // to 900
   .wheel
@@ -99,74 +93,71 @@
       transform-origin: top
 @media screen and (max-width: 1680px) and (max-height: 920px) // to 900
   .wheel
-    &__header
-      transform: scale(0.85)
-    &__sam
+    &__header, &__sam, &__footer
       transform: scale(0.85)
 @media screen and (max-width: 1680px) and (max-height: 900px) // to 750
   .wheel
     &__sam
       bottom: -30px
     &__footer
-      bottom: 20px
+      // bottom: 20px
 @media screen and (max-width: 1680px) and (max-height: 840px) // to 750
   .wheel
     &__header
       margin-top: 20px
-      transform: scale(0.80)
     &__title
       margin-top: 20px
       font-size: 65px
-    &__sam
+    &__header, &__sam, &__footer
+      transform: scale(0.85)
+@media screen and (max-width: 1680px) and (max-height: 790px) // to 750
+  .wheel
+    &__header, &__sam, &__footer
       transform: scale(0.80)
 @media screen and (max-width: 1536px) and (max-height: 864px) // to 714
   .wheel
     &__sam
       bottom: -50px
-    &__footer
-      bottom: 20px
 @media screen and (max-width: 1536px) and (max-height: 750px) // to 714
   .wheel
-    &__header
-      transform: scale(0.75)
-    &__sam
-      transform: scale(0.75)
-@media screen and (max-width: 1470px) and (max-height: 700px) // 768 to 618
+    &__header, &__sam, &__footer
+      transform: scale(0.78)
+@media screen and (max-width: 1470px) and (max-height: 720px) // 768 to 618
   .wheel
-    &__header
+    &__header, &__sam, &__footer
+      transform: scale(0.75)
+@media screen and (max-width: 1470px) and (max-height: 690px) // 768 to 618
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.73)
+@media screen and (max-width: 1470px) and (max-height: 666px) // 768 to 618
+  .wheel
+    &__header, &__sam, &__footer
       transform: scale(0.70)
-    &__sam
-      transform: scale(0.70)
-    &__footer
-      transform: scale(0.8)
-      transform-origin: bottom
 @media screen and (max-width: 1470px) and (max-height: 650px) // 768 to 618
   .wheel
-    &__header
+    &__header, &__sam, &__footer
       transform: scale(0.67)
-    &__sam
-      transform: scale(0.67)
-@media screen and (max-width: 1464px) and (max-height: 615px) // 715 to 565
+@media screen and (max-width: 1464px) and (max-height: 715px) // 715 to 565
   .wheel
-    &__header
-      transform: scale(0.63)
     &__sam
-      transform: scale(0.63)
       bottom: -70px
     &__footer
-      transform: scale(0.7)
-
-
-
-
-
-
-// ************************** 1440
-// ************************** 1440
-// ************************** 1440
-// ************************** 1440
-@media screen and (max-width: 1440px)
+      bottom: 20px
+@media screen and (max-width: 1464px) and (max-height: 595px) // 715 to 565
   .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.64)
+
+// ************************** 1440
+// ************************** 1440
+// ************************** 1440
+// ************************** 1440
+@media screen and (max-width: 1440px) 
+  // and (max-height: 900px) // 900 to 750
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(1)
     &__header
       margin-top: 50px
     &__logo
@@ -184,3 +175,143 @@
       line-height: 14px
       width: 383px
       bottom: 35px
+@media screen and (max-width: 1440px) and (max-height: 850px) // 900 to 750
+  .wheel
+    &__title
+      margin-top: 40px
+@media screen and (max-width: 1440px) and (max-height: 820px) // 900 to 750
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.95)
+@media screen and (max-width: 1440px) and (max-height: 785px) // 900 to 750
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.9)
+    &__title
+      margin-top: 20px
+@media screen and (max-width: 1376px) and (max-height: 958px) // 958 to 808
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(1.1)
+@media screen and (max-width: 1386px) and (max-height: 930px) // 958 to 808
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(1)
+@media screen and (max-width: 1376px) and (max-height: 850px) // 958 to 808
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.95)
+@media screen and (max-width: 1368px) and (max-height: 768px) // 768 to 618
+  .wheel
+    &__header
+      margin-top: 30px
+    &__sam
+      bottom: -20px
+    &__footer
+      bottom: 20px
+@media screen and (max-width: 1368px) and (max-height: 720px) // 768 to 618
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.9)
+@media screen and (max-width: 1368px) and (max-height: 680px) // 768 to 618
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.87)
+@media screen and (max-width: 1368px) and (max-height: 655px) // 768 to 618
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.83)
+@media screen and (max-width: 1368px) and (max-height: 635px) // 768 to 618
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.8)
+
+
+
+//1280*800
+@media screen and (max-width: 1280px) 
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(1)
+    &__header
+      margin-top: 40px
+    &__logo
+      width: 288px
+      height: 52px
+    &__title
+      margin-top: 50px
+      font-size: 38px
+    &__sam
+      bottom: 0
+      height: 525px
+      left: -60px
+      width: 645px
+    &__footer
+      font-size: 11px
+      line-height: 14px
+      width: 100%
+      padding: 0 50px
+      bottom: 35px
+
+@media screen and (max-width: 1280px) and (max-height: 710px) // 800 to 570
+  .wheel
+    &__header, &__title
+      margin-top: 20px
+    &__sam
+      bottom: -20px
+    &__footer
+      bottom: 25px
+@media screen and (max-width: 1280px) and (max-height: 650px) // 800 to 570
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.95)
+@media screen and (max-width: 1280px) and (max-height: 615px) // 800 to 570
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(0.9)
+
+//1024*768
+@media screen and (max-width: 1024px) 
+  .wheel
+    &__header, &__sam, &__footer
+      transform: scale(1)
+    &__header
+      margin-top: 41px
+    &__logo
+      width: 272px
+      height: 49px
+    &__title
+      margin-top: 55px
+      font-size: 38px
+    &__sam
+      bottom: 22px
+      width: 699px
+      height: 570px
+      left: -175px
+    &__footer
+      font-size: 11px
+      line-height: 14px
+      width: 100%
+      padding: 0 35px
+      bottom: 44px
+
+
+@media screen and (max-width: 1032px) and (min-height: 1032px)  and (orientation: portrait)
+  .wheel
+    &__sam
+      left: -70px
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px)
+  .wrapper
+    display: none
+  .Layout_column__3MM83 // ????????????????
+    width: 100%
